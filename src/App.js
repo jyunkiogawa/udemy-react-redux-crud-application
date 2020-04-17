@@ -1,12 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const App = () => {
-  const profiles = [
-    { name: "Taro", age: 10},
-    { name: "Hanako", age: 15},
-    { name: "Noname" }
-  ]
   return (
     <div> {
       profiles.map((profile, index) => {
