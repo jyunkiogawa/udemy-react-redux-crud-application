@@ -1,6 +1,10 @@
 import React from 'react';
 
 const App = () => {
+  const profiles = [
+    { name: "Taro", age: 12 },
+    { name: "Kate", age: 13 },
+  ]
   return (
     <div> {
       profiles.map((profile, index) => {
@@ -15,9 +19,5 @@ const User = (props) => {
   return <div>Hi I am {props.name}!, and {props.age}years old! </div>
 }
 
-User.PropTypes = {
-  name: PropTypes.string,
-  age: PropTypes.number.isRequired
-}
 
 export default App;
